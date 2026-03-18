@@ -1,11 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Jornada de Ingeniero en Software - 2026</title>
 </head>
+
 <body>
-    
+    <header>
+        <img src="img/logo-ues.png" alt="Logo de la Universidad Estatal de Sonora" width="200">
+        <h1>
+            Jornada de Ingeniero en Software - 2026
+        </h1>
+        <p>
+            Fecha del evento:
+            <time datetime="2026-04-27"></time>
+
+        </p>
+
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#index.html">Inicio</a></li>
+            <li><a href="programa.html">Programa</a></li>
+            <li><a href="#registro">Registro</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2> Agenda Rapida</h2>
+        <li>Conferencia 1 sobre tendencias en desarrollo de software</li>
+        <li>Conferencia 2 sobre la inteligencia artificial aplicada</li>
+        <li>Entrega de reconocimientos academicos</li>
+        <li>Conferencia 3 sobre arquitectura de software moderena</li>
+        <li>Evento cultural para cierre de la jornada</li>
+        <section id="registro">
+            <h2>Registro del evento</h2>
+            <form>
+                <div>
+                    <label for="nombre-completo">Nombre completo:</label>
+                    <input type="text" id="nombre-completo" name="nombre-completo" required>
+                </div>
+                <div>
+                    <label for="correo-institucional">Correo institucional:</label>
+                    <input type="email" id="correo-institucional" name="correo-institucional"
+                    pattern="([0-9]{8}|[0-9]{11})@ues\.mx" 
+                    required>
+                </div>
+                <fieldset>
+                    <legend>Evento principal</legend>
+                    <input type="radio"
+                    id="conferencia1" name="evento-principal" value="conferencia1" required>
+                    <label for="conferencia1">Conferencia 1: Tendencias en desarrollo de software</label>
+                    <br>
+                    <input type="radio"
+                    id="conferencia2" name="evento-principal" value="conferencia2">
+                    <label for="conferencia2">Conferencia 2: Inteligencia artificial aplicada</label>
+                    <br>
+                    <input type="radio"
+                    id="conferencia3" name="evento-principal" value="conferencia3">
+                    <label for="conferencia3">Conferencia 3: Arquitectura de software moderna</label>
+                </fieldset>
+                <div>
+                    <label for="comentarios">Comentarios adicionales:</label>
+                    <textarea id="comentarios" name="comentarios" rows="4" cols="50"
+                    placeholder="Escribe aquí cualquier comentario o pregunta que tengas sobre el evento."></textarea>
+                </div>
+                <button type="submit">Registrarse</button>
+            </form>
+        </section>
+
+
+
+    </main>
+    <footer>
+        <p>&copy; 2023 Jornada de Ingeniero en Software. Todos los derechos reservados.</p>
+    </footer>
 </body>
+
 </html>
